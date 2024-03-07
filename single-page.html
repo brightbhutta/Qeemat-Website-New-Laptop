@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello!</title>
+<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300|Josefin+Slab' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style1.css"  title="text/css" />
+  <link rel="stylesheet" href="css/style-tabs.css" type="text/css" />
+  <link rel="stylesheet" href="css/accordion.css" type="text/css" />
+  <link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
+  
+	<script type="text/javascript"src="js/jquery.js"></script>
+	<script type="text/javascript" src="tabcontent.js"></script>
+    <script src="js/js-image-slider.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			//Default Action
+			$(".tab_content").hide(); //Hide all content
+			$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+			$(".tab_content:first").show(); //Show first tab content
+	
+			//On Click Event
+			$("ul.tabs li").click(function() {
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //Add "active" class to selected tab
+				$(".tab_content").hide(); //Hide all tab content
+				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active content
+				return false;
+			});
+
+		});
+	</script>
+</head>    
+<body>
+    <div id="wrapper">
+		<div id="shadow">
+			<div id="header">
+				<a href="#" title="Logo"></a>
+				<div class="top-menu-bar">
+					<ul>
+						<li><a href="#">Car</a></li>
+						<li><a href="#">Bikes</a></li>
+						<li><a href="#">Mobiles</a></li>
+						<li><a href="#">Electronies</a></li>
+						<li><a href="#">Commodities</a></li>
+						<li><a href="#">Telecome</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="right" id="search">
+						<input id="searchbar" type="text" onBlur="if(this.value=='')this.value=this.defaultValue;" onFocus="if(this.value==this.defaultValue)this.value='';" value="Enter Your Search" name="s">
+						<a href="#" title="Search"></a>
+					</div>
+				<!---- class right end---->
+				</div>
+				<div id="menu">
+					<ul class="sf-menu">
+						<li><a href="http://www.qeemat.com" class="hm">Home</a></li>
+						<li><a href="http://www.qeemat.com/cars/" class="hm">Dell</a></li>
+						<li><a href="http://www.qeemat.com/electronics/" class="hm">apple</a></li>
+						<li><a href="http://www.qeemat.com/laptops/" class="hm">Acer</a></li>
+						<li><a href="http://www.qeemat.com/mobiles/" class="hm">Ausu</a></li>
+						<li><a href="http://www.qeemat.com/motorcycles/" class="hm">Hp</a></li>
+                   		<li><a href="http://www.qeemat.com/qeemat/" class="hm">Ibm</a></li>
+                		<li><a href="http://www.qeemat.com/telecom/" class="hm">Samsung</a></li>
+                    	<li><a href="http://www.qeemat.com/telecom/" class="hm">Sony</a></li>
+				<!---- ul end ---->		
+      				 </ul>
+      		  </div>
+			</div>
+			<div id="header-shadow"></div>
+			
+			<div id="content">
+				<div class="main">
+					<div class="heading-area bar">
+						<h1>HP Pavilion DV6 Price in Pakistan</h1>
+					</div>
+							<div class="other-pages">
+								<div class="col-first">
+								<img src="images/hp-pavilion-dv6-6c15nr.jpg" />
+								</div>
+							</div>	
+
+				</div>	
+					<div class="side-bar">
+					<div class="container">
+					<ul class="tabs">
+						<li><a href="#tab1">Popular</a></li>
+						<li><a href="#tab2">Latest</a></li>
+					</ul>
+					<div class="tab_container">
+						<div id="tab1" class="tab_content">
+							<ul class="side-bar-tabs">
+							<li>
+								<img src="images/acer-aspire-e1-571-price.jpg" />
+								<h3><a href="#">Dell Laptop Price</a></h3>
+							</li>
+							<li>
+								<img src="images/acer-aspire-e1-571-price.jpg">
+								<h3><a href="#">Dell Laptop Price</a></h3>
+							</li>
+							<li>
+								<img src="images/acer-aspire-e1-571-price.jpg" />
+								<h3><a href="#">Dell Laptop Price</a></h3>
+							</li>
+							<li>
+								<img src="images/acer-aspire-e1-571-price.jpg" />
+								<h3><a href="#">Dell Laptop Price</a></h3>
+							</li>
+							<li>
+								<img src="images/acer-aspire-e1-571-price.jpg">
+								<h3><a href="#">Dell Laptop Price</a></h3>
+							</li>
+	
+							</ul>
+
+						</div>
+						<div id="tab2" class="tab_content">
+							
+								<ul class="side-bar-tabs">
+							<li>
+								<img src="images/acer-aspire-e1-571-price.jpg" />
+								<h3><a href="#">Dell Laptop Price</a></h3>
+							</li>
+							<li>
+								<img src="images/acer-aspire-e1-571-price.jpg">
+								<h3><a href="#">Dell Laptop Price</a></h3>
+							</li>
+							<li>
+								<img src="images/acer-aspire-e1-571-price.jpg" />
+								<h3><a href="#">Dell Laptop Price</a></h3>
+							</li>
+							<li>
+								<img src="images/acer-aspire-e1-571-price.jpg">
+								<h3><a href="#">Dell Laptop Price</a></h3>
+							</li>
+	
+							<li>
+								<img src="images/acer-aspire-e1-571-price.jpg" />
+								<h3><a href="#">Dell Laptop Price</a></h3>
+							</li>
+
+							</ul>
+
+								</div>
+							
+						</div>
+					</div>
+
+				</div>	
+					
+					</div>
+			</div>
+		<div id="footer-area">
+					<div id="ftr">
+							<div class="footer-content">
+							<h3>Contact Us</h3>
+							<p class="phone">(907)</p>
+							<p class="border"></p>
+							<p class="mail">Admin</p>
+							</div>
+					</div>
+					<div id="ftr">
+							<div class="footer-content">
+							<h3>Quick Link</h3>
+							<p>Nokia Lumia 920</p>
+							<p class="border"></p>
+							<p>Samsung Galaxy N7100</p>
+							</div>
+					</div>
+					<div id="ftr">
+							<div class="footer-content">
+							<h3>Get In Touch</h3>
+							<a title="Facebook page" href="https://www.facebook.com/" target="_blank"><div class="fb"></div></a>
+							<a title="Twitter page" href="https://www.twitter.com/" target="_blank"><div class="tweet"></div></a>
+							<a title="#" href="#" target="_blank"><div class="sm-1"></div></a>
+							<a title="#" href="#" target="_blank"><div class="sm-2"></div></a>	
+							<a title="#" href="#" target="_blank"><div class="sm-3"></div></a>
+							</div>
+							
+					</div>
+				<div class="footer-content">
+							<h3>Subscribe Newsletter</h3>
+							<script>
+						$("#subscribe").click(function(){$.post("subscribeURL",$("#subscriberForm").serialize(),function(data){if(data.isSubscribed){alert("Thanks for subscribing");}else{alert("There was some sort of error");}},"json");});
+							</script>
+							<form id="subscriberForm">
+							<input type="text" name="emailAddress">
+							<button id="subscribe">submit</button>
+							</form>					
+				</div>
+								<div class="footer-bottom-area">
+								<p class="copyrights">Copy Rights © Laptops.qeemat.com</p>
+									<a href="#"><strong>Home</strong></a>
+									<a href="#"><strong>About Us</strong></a>
+									<a href="#"><strong>Sitemap</strong></a>
+									<a href="#"><strong>Contact Us</strong></a>
+									<a href="#"><strong>Privacy Policy</strong></a>
+								</div>
+	</div>							
+		</div>
+</body>
+</html>

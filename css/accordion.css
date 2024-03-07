@@ -1,0 +1,121 @@
+#accordian {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #D0D0D0;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    padding: 10px;
+    width: 980px;
+}
+.title {
+    background: url("../images/bar.jpg") repeat-x scroll 0 6px transparent;
+    border-bottom: 1px solid #59AA1B;
+    border-right: 3px solid #59AA1B;
+    float: left;
+    height: 300px;
+    margin: 0 5px;
+    padding: 10px;
+    position: relative;
+    width: 20px;
+}
+.title > h3 {
+    bottom: 24%;
+    color: #BAB5B5;
+    float: left;
+    font-family: Microsoft Yi Baiti;
+    font-size: 22px;
+    font-weight: bold;
+    height: 176px;
+    left: 3px;
+    line-height: 21px;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    transform: rotate(270deg);
+    width: 180px;
+}
+.block:hover .title{
+    background: none repeat scroll 0 0 #59AA1B;
+}
+.block:hover .title h3{
+    color: white!important;
+}
+
+.block:hover .description{
+	opacity:1;
+	z-index:1;
+	left:50px;
+}
+.description {
+    background: none repeat scroll 0 0 white;
+    border-bottom: 2px solid #59AA1B;
+    border-right: 3px solid #59AA1B;
+    height: 99%;
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition:opacity 1s ease 0s;
+    -moz-transition:opacity 1s ease 0s;
+    transition:opacity 1s ease 0s;
+    width:650px;
+    z-index: -1;
+	}
+.block{
+    float: left;
+    margin: 0 3px;
+    position: relative;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 40px;
+}
+.block:hover {
+    width: 700px;
+}
+.description img {
+    margin: 0;
+}
+.image {
+    float: left;
+    margin: 55px 18px;
+    overflow: hidden;
+    position: relative;
+    width: 180px;
+}
+.hover-effect {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9);
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    font-family: Ebrima;
+    height: 190px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 160px;
+}
+.image:hover .hover-effect{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+.hover-effect > h3 {
+    color: #F77C2A;
+    font-weight: normal;
+    margin: 0;
+}
+.hover-effect > p {
+    color: #B8BAB7;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0;
+}

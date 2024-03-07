@@ -1,0 +1,82 @@
+.container {
+    margin: 20px auto 0;
+    width: 92%;
+}
+ul.tabs {
+    border-bottom: 1px solid #c4c2c2;
+    float: left;
+    height: 40px;
+    list-style: none outside none;
+    margin: 26px 0 0;
+    padding: 0;
+    width: 100%;
+}
+ul.tabs li.active a {
+    border-left: 1px solid #EAE9E9;
+    border-right: 1px solid #EAE9E9;
+    border-top: 1px solid #EAE9E9;
+    color: #59AA1B;
+}
+.active {
+    background: none repeat scroll 0 0 white;
+    height: 41px;
+}
+ul.tabs li {
+    float: left;
+    margin: 0 0 -1px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+ul.tabs li a:hover {
+	
+}	
+html ul.tabs li.active, html ul.tabs li.active a:hover {
+    background: none repeat scroll 0 0 white;
+}
+.tab_container {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+element.style {
+    display: block;
+}
+ul.tabs li a {
+    color: #8D8D8D;
+    display: block;
+    font-family: Microsoft Yi Baiti;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 40px;
+    outline: medium none;
+    padding: 0 20px;
+    text-decoration: none;
+}
+.tab_content {
+    float: left;
+    margin-top: 20px;
+    padding: 10px;
+}
+.tab_content h3 a {
+    color: black;
+}
+.tab_content img {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.tab-content-area {
+    border: 1px solid #999999;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin: 10px 8px;
+    width: 202px;
+}
+.tab-content-area img{
+	border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+}
